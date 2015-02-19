@@ -66,6 +66,441 @@
   @uxs:   ~"(max-width: 320px)";
 //
 
+	// RESETS y EXTARS 
+		
+		.main-content {
+			position: relative;
+			margin-bottom: 150px;
+			//z-index: 1;
+		}
+
+		.section-footer {
+			position: relative;
+			z-index: 0;
+		}
+
+
+		h1, h2, h3, h4, h5, h6 {
+			margin: 0;          
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+		}
+		p {
+			line-height: 120%;
+		}
+
+		.label { // overrides bootstrap .label class 
+			white-space: normal!important;
+		}
+
+		// Checkbox y TYC alineados.
+		.pfTycCheck {
+			display: table;
+			margin-bottom: 10px;
+			input {
+				display: table-cell;
+				margin-right: 5px;
+			}
+			label {
+				display: table-cell;
+				
+			}
+		}
+		
+		// posibilita centrar una columna dentro de un row
+			.col-centered {
+			    float: none;
+			    margin: 0 auto;
+			}
+		// 
+
+		// Muestra que mediaqueri esta activa
+			.breakpoint-actual {				
+				position: fixed;
+				z-index: 999999999999999999;
+				top: 0;
+				right: 0;
+				width: 50px;
+				height: 50px;
+				background: rgba(0, 0, 0, 0.8);
+				overflow: hidden;
+				> div {
+					color: white;
+					text-align: center;
+					padding-top: 15px;
+				}
+			}
+			.breakpoint-actual {
+				//display: block!important;
+			}
+		//
+
+		// Hace visible la grilla de bootrap			
+			.show-grid [class^=col-] {
+				//padding-top: 10px;
+				//padding-bottom: 10px;
+				min-height: 20px;
+				background-color: #eee;
+				background-color: rgba(86,61,124,.15);
+				border: 1px solid #ddd;
+				border: 1px solid rgba(86,61,124,.2);
+			}
+		//
+
+		// Adds a new breakpoint to Bootstrap grid
+			
+			// Extra Extra Small
+			@media only screen and (max-width : 480px) {
+					.col-xxs-1, .col-xxs-2, .col-xxs-3, .col-xxs-4, .col-xxs-5, .col-xxs-6, .col-xxs-7, .col-xxs-8, .col-xxs-9, .col-xxs-10, .col-xxs-11, .col-xxs-12 {
+						float: left;
+					}
+					.col-xxs-12 {
+						width: 100%;
+					}
+					.col-xxs-11 {
+						width: 91.66666667%;
+					}
+					.col-xxs-10 {
+						width: 83.33333333%;
+					}
+					.col-xxs-9 {
+						width: 75%;
+					}
+					.col-xxs-8 {
+						width: 66.66666667%;
+					}
+					.col-xxs-7 {
+						width: 58.33333333%;
+					}
+					.col-xxs-6 {
+						width: 50%;
+					}
+					.col-xxs-5 {
+						width: 41.66666667%;
+					}
+					.col-xxs-4 {
+						width: 33.33333333%;
+					}
+					.col-xxs-3 {
+						width: 25%;
+					}
+					.col-xxs-2 {
+						width: 16.66666667%;
+					}
+					.col-xxs-1 {
+						width: 8.33333333%;
+					}
+					.col-xxs-pull-12 {
+						right: 100%;
+					}
+					.col-xxs-pull-11 {
+						right: 91.66666667%;
+					}
+					.col-xxs-pull-10 {
+						right: 83.33333333%;
+					}
+					.col-xxs-pull-9 {
+						right: 75%;
+					}
+					.col-xxs-pull-8 {
+						right: 66.66666667%;
+					}
+					.col-xxs-pull-7 {
+						right: 58.33333333%;
+					}
+					.col-xxs-pull-6 {
+						right: 50%;
+					}
+					.col-xxs-pull-5 {
+						right: 41.66666667%;
+					}
+					.col-xxs-pull-4 {
+						right: 33.33333333%;
+					}
+					.col-xxs-pull-3 {
+						right: 25%;
+					}
+					.col-xxs-pull-2 {
+						right: 16.66666667%;
+					}
+					.col-xxs-pull-1 {
+						right: 8.33333333%;
+					}
+					.col-xxs-pull-0 {
+						right: auto;
+					}
+					.col-xxs-push-12 {
+						left: 100%;
+					}
+					.col-xxs-push-11 {
+						left: 91.66666667%;
+					}
+					.col-xxs-push-10 {
+						left: 83.33333333%;
+					}
+					.col-xxs-push-9 {
+						left: 75%;
+					}
+					.col-xxs-push-8 {
+						left: 66.66666667%;
+					}
+					.col-xxs-push-7 {
+						left: 58.33333333%;
+					}
+					.col-xxs-push-6 {
+						left: 50%;
+					}
+					.col-xxs-push-5 {
+						left: 41.66666667%;
+					}
+					.col-xxs-push-4 {
+						left: 33.33333333%;
+					}
+					.col-xxs-push-3 {
+						left: 25%;
+					}
+					.col-xxs-push-2 {
+						left: 16.66666667%;
+					}
+					.col-xxs-push-1 {
+						left: 8.33333333%;
+					}
+					.col-xxs-push-0 {
+						left: auto;
+					}
+					.col-xxs-offset-12 {
+						margin-left: 100%;
+					}
+					.col-xxs-offset-11 {
+						margin-left: 91.66666667%;
+					}
+					.col-xxs-offset-10 {
+						margin-left: 83.33333333%;
+					}
+					.col-xxs-offset-9 {
+						margin-left: 75%;
+					}
+					.col-xxs-offset-8 {
+						margin-left: 66.66666667%;
+					}
+					.col-xxs-offset-7 {
+						margin-left: 58.33333333%;
+					}
+					.col-xxs-offset-6 {
+						margin-left: 50%;
+					}
+					.col-xxs-offset-5 {
+						margin-left: 41.66666667%;
+					}
+					.col-xxs-offset-4 {
+						margin-left: 33.33333333%;
+					}
+					.col-xxs-offset-3 {
+						margin-left: 25%;
+					}
+					.col-xxs-offset-2 {
+						margin-left: 16.66666667%;
+					}
+					.col-xxs-offset-1 {
+						margin-left: 8.33333333%;
+					}
+					.col-xxs-offset-0 {
+						margin-left: 0%;
+					}
+					.col-xxs-hidden {display: none; }
+			}
+
+			// Ultra Extra Small
+			@media only screen and (max-width : 320px) {
+				.col-uxs-1, .col-uxs-2, .col-uxs-3, .col-uxs-4, .col-uxs-5, .col-uxs-6, .col-uxs-7, .col-uxs-8, .col-uxs-9, .col-uxs-10, .col-uxs-11, .col-uxs-12 {
+					float: left;
+				}
+				.col-uxs-12 {
+					width: 100%;
+				}
+				.col-uxs-11 {
+					width: 91.66666667%;
+				}
+				.col-uxs-10 {
+					width: 83.33333333%;
+				}
+				.col-uxs-9 {
+					width: 75%;
+				}
+				.col-uxs-8 {
+					width: 66.66666667%;
+				}
+				.col-uxs-7 {
+					width: 58.33333333%;
+				}
+				.col-uxs-6 {
+					width: 50%;
+				}
+				.col-uxs-5 {
+					width: 41.66666667%;
+				}
+				.col-uxs-4 {
+					width: 33.33333333%;
+				}
+				.col-uxs-3 {
+					width: 25%;
+				}
+				.col-uxs-2 {
+					width: 16.66666667%;
+				}
+				.col-uxs-1 {
+					width: 8.33333333%;
+				}
+				.col-uxs-pull-12 {
+					right: 100%;
+				}
+				.col-uxs-pull-11 {
+					right: 91.66666667%;
+				}
+				.col-uxs-pull-10 {
+					right: 83.33333333%;
+				}
+				.col-uxs-pull-9 {
+					right: 75%;
+				}
+				.col-uxs-pull-8 {
+					right: 66.66666667%;
+				}
+				.col-uxs-pull-7 {
+					right: 58.33333333%;
+				}
+				.col-uxs-pull-6 {
+					right: 50%;
+				}
+				.col-uxs-pull-5 {
+					right: 41.66666667%;
+				}
+				.col-uxs-pull-4 {
+					right: 33.33333333%;
+				}
+				.col-uxs-pull-3 {
+					right: 25%;
+				}
+				.col-uxs-pull-2 {
+					right: 16.66666667%;
+				}
+				.col-uxs-pull-1 {
+					right: 8.33333333%;
+				}
+				.col-uxs-pull-0 {
+					right: auto;
+				}
+				.col-uxs-push-12 {
+					left: 100%;
+				}
+				.col-uxs-push-11 {
+					left: 91.66666667%;
+				}
+				.col-uxs-push-10 {
+					left: 83.33333333%;
+				}
+				.col-uxs-push-9 {
+					left: 75%;
+				}
+				.col-uxs-push-8 {
+					left: 66.66666667%;
+				}
+				.col-uxs-push-7 {
+					left: 58.33333333%;
+				}
+				.col-uxs-push-6 {
+					left: 50%;
+				}
+				.col-uxs-push-5 {
+					left: 41.66666667%;
+				}
+				.col-uxs-push-4 {
+					left: 33.33333333%;
+				}
+				.col-uxs-push-3 {
+					left: 25%;
+				}
+				.col-uxs-push-2 {
+					left: 16.66666667%;
+				}
+				.col-uxs-push-1 {
+					left: 8.33333333%;
+				}
+				.col-uxs-push-0 {
+					left: auto;
+				}
+				.col-uxs-offset-12 {
+					margin-left: 100%;
+				}
+				.col-uxs-offset-11 {
+					margin-left: 91.66666667%;
+				}
+				.col-uxs-offset-10 {
+					margin-left: 83.33333333%;
+				}
+				.col-uxs-offset-9 {
+					margin-left: 75%;
+				}
+				.col-uxs-offset-8 {
+					margin-left: 66.66666667%;
+				}
+				.col-uxs-offset-7 {
+					margin-left: 58.33333333%;
+				}
+				.col-uxs-offset-6 {
+					margin-left: 50%;
+				}
+				.col-uxs-offset-5 {
+					margin-left: 41.66666667%;
+				}
+				.col-uxs-offset-4 {
+					margin-left: 33.33333333%;
+				}
+				.col-uxs-offset-3 {
+					margin-left: 25%;
+				}
+				.col-uxs-offset-2 {
+					margin-left: 16.66666667%;
+				}
+				.col-uxs-offset-1 {
+					margin-left: 8.33333333%;
+				}
+				.col-uxs-offset-0 {
+					margin-left: 0%;
+				}
+				.col-uxs-hidden {display: none; }
+			}
+		//	
+
+		// NO GUTTER GRID
+			.row-no-gutter{
+				  margin-right: 0;
+				  margin-left: 0;
+
+				  [class*="col-"] {
+					  padding-right: 0;
+					  padding-left: 0;
+				  }
+			}
+		//
+		
+		// Adds a new breakpoints to container
+			// XS
+			@media @xs {
+			  .container {
+			    width: 480px;
+			  }
+			}
+			// XXS
+			@media @xxs {
+			  .container {
+			    width: 320px;
+			  }
+			}
+		//
+	// 
 
 // LAYOUT -----------------------------------------
 
